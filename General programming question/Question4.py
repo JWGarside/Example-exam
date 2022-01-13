@@ -40,6 +40,45 @@ or the program is largely incomplete.
 # Example2: input = "sdfhdsl4??sfasdfga?6sdjkfhbdsjhfkb" output = True (the two numbers sum to 10)
 # weight = 8
 
-def question_mark():
-    return 
+from numpy import character
+
+
+def question_mark(string):
+    """
+    cnt = {}
+    flag = False
+    for i in string:
+        try:
+            int(i) 
+        except: #when it isnt a number
+            if '?' in string:
+                cnt["?"] = 0
+            cnt["?"] += 1
+
+    
+
+            
+        else: #when it is a number
+
+    return cnt
+
+    """
+    for character in string:
+        count = 0
+        if character == '?':
+            count += 1
+        else:
+            continue
+            
+        if count == 3:
+            if type(character) == str:
+                return character
+
+
+
+
+    
+
+
+print(question_mark("sdfhdsl4??sfasdfga?1sdjkfhbdsjhfkb"))
 

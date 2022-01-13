@@ -40,5 +40,26 @@ or the program is largely incomplete.
 #       returns 'the jack cow and jumped jill over went the up moon the'
 # weight = 3
 
-def merge_sentences():
-    return 
+def merge_sentences(sentenceone, sentencetwo):
+    wordListOne = sentenceone.split()
+    wordListTwo = sentencetwo.split()
+    length1 = len(wordListOne)
+    length2 = len(wordListTwo)
+    resultingsentence = ""
+    if length1 != length2: 
+        return None
+        print("The string are of different lengths")
+    else:
+        x = 0
+        while x < length1:
+            resultingsentence += (wordListOne[x] + " " + wordListTwo[x] + " ")
+            x += 1
+        
+    return resultingsentence
+        
+
+print(merge_sentences('the cow jumped over the moon', 'jack and jill went up the'))
+
+
+        
+     
